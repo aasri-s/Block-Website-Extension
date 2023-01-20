@@ -1,0 +1,16 @@
+{
+  "manifest_version" : 3,
+  "name": "Block Distracting Websites",
+  "description": "When turned on, blocks websites that are distracting",
+  "version": "1.0",
+  "icons": {
+    "16" : "/sixteen.jpeg",
+    "48": "/fortyeight.png",
+    "128": "/onetwentyeight.jpeg"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["Block.js"]
+  }]
+  
+}
